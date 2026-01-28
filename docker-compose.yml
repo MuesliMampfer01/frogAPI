@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frog-api:
+    build: .
+    container_name: frogAPI
+    restart: unless-stopped
+    volumes:
+      - /home/pi/docker-data/frogAPI/frogpics:/app/images
+    networks:
+      - shared-frog-net
+
+
+networks:
+  shared-frog-net:
+    external: true
