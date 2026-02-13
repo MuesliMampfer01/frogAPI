@@ -19,4 +19,5 @@ def get_random_frog():
         img_path = os.path.join(IMG_DIR, random_img)
         return FileResponse(img_path)
     except Exception as e:
+        print(f"Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
