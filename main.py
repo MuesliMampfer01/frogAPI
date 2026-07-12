@@ -7,6 +7,8 @@ app = FastAPI(title="FrogAPI 🐸", description="The ultimate source for frog co
 app.include_router(frogs.router)
 app.include_router(system.router)
 
+app.include_router(weather.router)
+
 @app.get("/")
 def root():
     return {"message": "Quack! Welcome to FrogAPI! Go to /docs to see all endpoints."}
