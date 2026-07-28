@@ -1,4 +1,4 @@
-# 🐸 FrogAPI
+# 🐸 frogAPI
 
 Eine modulare REST-API, entwickelt in **FastAPI**, die exklusiv als Microservice für meinen privaten Discord-Bot [BabyBirneBot](https://github.com/MuesliMampfer01/BabyBirneBot) betrieben wird. Die API läuft als Container auf einem Raspberry Pi Server und stellt Backend-Dienste wie Bildauslieferung, System-Monitoring und Wetterdaten bereit.
 
