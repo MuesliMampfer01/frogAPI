@@ -22,7 +22,7 @@ async def get_weather(city: str):
         lon = location["longitude"]
         city_name = location["name"]
 
-        weather_url=f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,apparent_temperature,weather_code"
+        weather_url=f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,apparent_temperature,weather_code&timezone=auto&models=icon_seamless"
 
         async with aiohttp.ClientSession() as weather_session:
             async with weather_session.get(weather_url) as weather_resp:
